@@ -1,0 +1,24 @@
+version: "3"
+services:
+  node_server:
+    container_name: flights-management
+    restart: always
+    build: .
+    environment:
+      - PORT=3000
+      - DB_HOST=mongo
+      - DB_PORT=27017
+      - DB_NAME=flight_management
+      - DB_USER=
+      - DB_PASSWORD=
+      - DB_AUTHSOURCE=
+      - DUMMY_FLIGHT_RECORDS_PATH=./flightsSeedData.json
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"

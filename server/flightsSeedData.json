@@ -1,0 +1,76 @@
+[
+  {
+    "flightCode": "LH980",
+    "flightProvider": "Lufthansa",
+    "sourcePortName": "Frankfurt",
+    "sourcePortCode": "FRA",
+    "destinationPortName": "Dublin",
+    "destinationPortCode": "DUB",
+    "scheduledArrival": "2020-10-24T15:05:00.555Z",
+    "scheduledDeparture": "2020-10-24T13:05:00.555Z",
+    "status": "LANDED",
+    "arrivalTerminal": "T1"
+  },
+  {
+    "flightCode": "LH2518",
+    "flightProvider": "Lufthansa",
+    "sourcePortName": "Munich",
+    "sourcePortCode": "MUC",
+    "destinationPortName": "Dublin",
+    "destinationPortCode": "DUB",
+    "scheduledArrival": "2020-10-24T15:15:00.555Z",
+    "scheduledDeparture": "2020-10-24T13:20:00.555Z",
+    "status": "ON_SCHEDULE",
+    "arrivalTerminal": "T1"
+  },
+  {
+    "flightCode": "AY1385",
+    "flightProvider": "Finnair",
+    "sourcePortName": "Helsinki",
+    "sourcePortCode": "HEL",
+    "destinationPortName": "Dublin",
+    "destinationPortCode": "DUB",
+    "scheduledArrival": "2020-10-24T15:25:00.555Z",
+    "scheduledDeparture": "2020-10-24T13:25:00.555Z",
+    "status": "ON_SCHEDULE",
+    "arrivalTerminal": "T1"
+  },
+  {
+    "flightCode": "FR7327",
+    "flightProvider": "Ryanair",
+    "sourcePortName": "Prague",
+    "sourcePortCode": "PRG",
+    "destinationPortName": "Dublin",
+    "destinationPortCode": "DUB",
+    "scheduledArrival": "2020-10-24T15:35:00.555Z",
+    "delayedScheduledArrival": "2020-10-24T15:50:00.555Z",
+    "scheduledDeparture": "2020-10-24T13:35:00.555Z",
+    "status": "DELAYED",
+    "arrivalTerminal": "T1"
+  },
+  {
+    "flightCode": "FR667",
+    "flightProvider": "Ryanair",
+    "sourcePortName": "Birmingham",
+    "sourcePortCode": "BHX",
+    "destinationPortName": "Dublin",
+    "destinationPortCode": "DUB",
+    "scheduledArrival": "2020-10-24T15:40:00.555Z",
+    "delayedScheduledArrival": "2020-10-24T15:55:00.555Z",
+    "scheduledDeparture": "2020-10-24T14:40:00.555Z",
+    "status": "DELAYED",
+    "arrivalTerminal": "T1"
+  },
+  {
+    "flightCode": "FR8512",
+    "flightProvider": "Ryanair",
+    "sourcePortName": "Hamburg",
+    "sourcePortCode": "HAM",
+    "destinationPortName": "Dublin",
+    "destinationPortCode": "DUB",
+    "scheduledArrival": "2020-10-24T15:40:00.555Z",
+    "scheduledDeparture": "2020-10-24T13:40:00.555Z",
+    "status": "ON_SCHEDULE",
+    "arrivalTerminal": "T1"
+  }
+]
