@@ -68,8 +68,7 @@ const FlightDetail: React.FC<FlightDetailsProps> = (
                         <Button
                             variant="contained"
                             color="secondary"
-                            onClick={() => onFlightDelete(flightDetails)}
-                        >
+                            onClick={() => onFlightDelete(flightDetails)}>
                             DELETE
                         </Button>
                     </Box>

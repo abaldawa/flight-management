@@ -19,7 +19,7 @@ const updateFlight = async <T>(
 ): Promise<T> => {
     const url = FLIGHT_ID_PATH_URL.replace(':flightId', flightId);
     const response = await fetch(url, {
-        method: 'PUT', // *GET, POST, PUT, DELETE, etc.
+        method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
         },

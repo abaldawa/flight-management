@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Container from '@material-ui/core/Container';
 import {Box, Button, Grid} from '@material-ui/core';
 import SimpleDialog from '../../components/UI/SlideDialog';
 import FlightDetail from '../../components/FlightDetail/FlightDetail';
@@ -11,8 +12,6 @@ import {
 } from '../../serverApi/flightDetails';
 import FlightTime from "../../components/FlightTime/FlightTime";
 import SimpleSelect from "../../components/UI/SimpleSelect";
-
-import Container from '@material-ui/core/Container';
 
 const FlightsList: React.FC = () => {
     // ---- Global loader indicator
@@ -254,10 +253,10 @@ const FlightsList: React.FC = () => {
 
     return (
         <Container>
-            {confirmFlightDeletePopup}
-            {fullFlightDetailsPopup}
-            {createDummyFlightsElem}
-            {flightsListGrid}
+          {confirmFlightDeletePopup}
+          {fullFlightDetailsPopup}
+          {createDummyFlightsElem}
+          {flightsListGrid}
         </Container>
     );
 };

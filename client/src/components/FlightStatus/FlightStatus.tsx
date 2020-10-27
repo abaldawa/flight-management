@@ -27,7 +27,7 @@ const FlightStatus: React.FC<FlightStatusProps> = (
 
     return (
         <Box {...style}>
-            {status.replaceAll('_', ' ')}
+            {status?.replaceAll('_', ' ')}
         </Box>
     );
 };

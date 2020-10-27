@@ -1,7 +1,7 @@
 /**
  * User: abhijit.baldawa
  *
- * This module exposes 'createConnection' method to connect
+ * This module exposes 'createDBConnection' method to connect
  * mongoose client to mongodb server
  */
 

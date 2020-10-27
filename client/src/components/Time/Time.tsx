@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { Box } from '@material-ui/core';
 
 type TimeProps = {
     isoDate: string;
@@ -30,9 +31,9 @@ const Time: React.FC<TimeProps> = (
     const date = new Date(isoDate);
 
     return (
-        <span className={`${classes.time} ${classes.invalidTime}`}>
+        <Box component='span' className={`${classes.time} ${classes.invalidTime}`}>
             {date.getHours()}:{date.getMinutes()}
-        </span>
+        </Box>
     );
 };
 

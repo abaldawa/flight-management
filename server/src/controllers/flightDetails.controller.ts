@@ -42,7 +42,7 @@ const getFlightById: RequestHandler<{ id: string }> = async (req, res) => {
     if (flight) {
       res.status(200).json(flight);
     } else {
-      res.status(404).json({ message: `Flight id='${id}' not found` });
+      res.status(404).json({ error: `Flight id='${id}' not found` });
     }
   } catch (error) {
     res.status(500).json({ error: (error as Error).message });
@@ -63,7 +63,7 @@ const deleteFlightById: RequestHandler<{ id: string }> = async (req, res) => {
     const isDeleted = await flightDetailsService.deleteFlightById(id);
 
     if (!isDeleted) {
-      res.status(404).json({ message: `Flight id='${id}' not found` });
+      res.status(404).json({ error: `Flight id='${id}' not found` });
     } else {
       res
         .status(200)
@@ -92,7 +92,7 @@ const updateFlightById: RequestHandler<{ id: string }> = async (req, res) => {
     );
 
     if (!isUpdated) {
-      res.status(404).json({ message: `Flight id='${id}' not found` });
+      res.status(404).json({ error: `Flight id='${id}' not found` });
     } else {
       const updatedFlight = await flightDetailsService.getFlightById(id);
       res.status(200).json(updatedFlight);
@@ -138,7 +138,7 @@ const insertDummyFlights: RequestHandler = async (_, res) => {
     const totalFlightsCount = await flightDetailsService.totalFlightDetailsCount();
 
     if (totalFlightsCount) {
-      res.status(400).json({ message: 'flight details already exists in DB' });
+      res.status(409).json({ error: 'flight details already exists in DB' });
       return;
     }
 
