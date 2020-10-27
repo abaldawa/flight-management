@@ -3,7 +3,7 @@
 
 ## Tech Stack
 1. Backend: Node.js (14.x)/Typescript and Mongo DB
-2. Front end: React.js/Material UI
+2. Front end: React.js/Typescript/Material UI
 3. Docker
 
 ## How to run:
