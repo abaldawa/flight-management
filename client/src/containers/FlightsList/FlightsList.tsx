@@ -80,7 +80,7 @@ const FlightsList: React.FC = () => {
                 )}/>
         );
     }
-    // ----- delete flight
+    // ----- delete flight END ----
 
     // --- Full flight details
     const [selectedFlight, setSelectedFlight] = useState<FlightDetails>();
@@ -91,7 +91,8 @@ const FlightsList: React.FC = () => {
     };
     const closeFlightDetailsPopup = () => {
         if(!loading) {
-            setSelectedFlight(undefined);
+          setSelectedFlight(undefined);
+          setSelectedFlightStatus(undefined);
         }
     }
     const saveFlightStatus = async () => {
@@ -209,8 +210,9 @@ const FlightsList: React.FC = () => {
                 )}/>
         );
     }
-    // ----- full flight details
+    // ----- full flight details END ----
 
+    // --- Create Dummy flights or show flights list if available ---
     let createDummyFlightsElem: JSX.Element | undefined;
     let flightsListGrid: JSX.Element | undefined;
 
